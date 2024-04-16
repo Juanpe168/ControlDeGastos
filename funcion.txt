@@ -1,0 +1,18 @@
+function obtenerTajertas() {
+	var selector = document.getElementById("selector");
+	
+		$.ajax({
+			url:   'datos_usuario.php',
+			dataType: 'json',
+			type:  'get',
+			
+			success:  function (response) {
+				resultadoTarjeta = response;
+				
+				for(i=0;i<resultadoTarjeta.DatosTarjeta.length;i++){
+					$("#selector").append("<option>"+resultadoTarjeta.DatosTarjeta[i].tarjeta+"</option>");	
+					$(".idUsuario").val(resultadoTarjeta.DatosTarjeta[i].ID);
+				}
+			}
+		});
+}

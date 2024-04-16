@@ -1,0 +1,16 @@
+SELECT cat.nombre, cl.nombre AS 'Clientes',p.ID AS 'IDProducto', p.concepto, p.importe, t.propiedad, 
+u.user FROM productos as p INNER JOIN cliente AS cl ON p.ID_Cliente = cl.ID INNER JOIN categoria AS cat
+ ON p.ID_categoria = cat.ID INNER JOIN usuarios AS u ON p.ID_Usuario = u.ID INNER JOIN tienda AS t ON p.ID_Tienda = t.ID
+ 
+ 
+ SELECT cat.nombre, cl.nombre AS 'Clientes',p.ID AS 'IDProducto', p.concepto, p.importe, t.propiedad, u.user FROM productos as p 
+ INNER JOIN cliente AS cl ON p.ID_Cliente = cl.ID INNER JOIN categoria AS cat ON p.ID_categoria = cat.ID INNER JOIN usuarios AS u ON p.ID_Usuario = u.ID INNER JOIN tienda AS t ON p.ID_Tienda = t.ID WHERE cl.nombre = "Juliko el makina" 
+ AND p.concepto = "Alargo" AND cat.nombre = "Material Oficina"
+ 
+ 
+ ----- Consulta Todo -----
+ 
+ SELECT cl.nombre, cat.nombre, p.ID AS 'ID_Producto' , p.concepto, p.importe, t.propiedad, u.user FROM productos as p INNER JOIN cliente 
+ AS cl ON p.ID_Cliente = cl.ID INNER JOIN categoria AS cat ON p.ID_categoria = cat.ID INNER JOIN usuarios AS u ON p.ID_Usuario = u.ID INNER JOIN tienda 
+ AS t ON p.ID_Tienda = t.ID WHERE cl.nombre = "Pedro Rubio Cortina" 
+ AND cat.nombre="Material Oficina" AND p.ID = "2" AND p.concepto = "Alargador" AND p.importe ="5" AND t.propiedad = "1" AND u.user = "admin"

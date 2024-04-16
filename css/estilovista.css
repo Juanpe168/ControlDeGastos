@@ -1,0 +1,82 @@
+
+.totheleft{ 
+    text-align:left;
+    float: left;
+} 
+
+.totheleft2{ 
+    text-align:left;
+    float: left;
+	color: #9FFA5F;
+	font-size:25px;
+	margin-bottom:15px;
+	margin-top:10px;
+
+}
+a:hover {
+  color: red;
+	text-decoration:none;
+  }
+  
+.header{
+	background-color: black;
+	width:100%;
+	height:10%;
+	top: 0;
+	margin-top: 0;
+}
+
+body {
+	background-image: url("../images/fondovista.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+label{
+	color:#96B296;
+}
+
+.tablafuente{
+	color:#96B296;
+	font-size: 15px;
+
+}
+
+#resultadoClie{
+	background-color: rgba(255,255,255);
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	
+}
+
+#resultadoProd{
+	background-color: rgba(255,255,255);
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+#resultadoImporte{
+	background-color: rgba(255,255,255);
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+#resultadoTienda{
+	background-color: rgba(255,255,255);
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+
